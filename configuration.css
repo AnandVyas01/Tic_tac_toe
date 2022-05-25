@@ -1,0 +1,37 @@
+#config {
+    text-align: center;
+}
+#config h1{
+    margin: 1rem 0;
+}
+.inp input{
+    display: block;
+    margin: 0.5rem auto;
+    font: inherit;
+}
+.configuration-section{
+    width: 90%;
+    max-width: 40rem;
+    margin: 3rem auto;
+    text-align: center;
+}
+.configuration-section ol{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.configuration-section li{
+    margin: 1.5rem;
+    padding: 1.5rem;
+    width: 50%;
+}
+.configuration-section li h3{
+    font-size: 2rem;
+    color: rgb(212, 0, 255);
+}
+.configuration-section li p{
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(171, 0, 205);
+}

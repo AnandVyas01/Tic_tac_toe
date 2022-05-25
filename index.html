@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Yanone+Kaffeesatz:wght@300;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="overlay.css">
+<link rel="stylesheet" href="configuration.css">
     <title>tic-tac-toe</title>
 </head>
 <body>
@@ -17,20 +18,21 @@
         <h1>TIC_TAC_TOE</h1>
         <p>play tic-tac-toe game made with HTML, CSS & JS</p>
     </header>
+    <aside class="modal" id="config">
+        <h1>Choose your name!</h1>
+        <form>
+            <div class="inp">
+                <label for="playername">Player name</label>
+                <input type="text" id="playername" name="playername">
+            </div>
+            <div>
+                <button type="button" class="btn btn-alt">cancel</button>
+                <button type="submit" class="btn">confirm</button>
+            </div>
+        </form>
+    </aside>
     <section class="configuration-section">
-        <aside class="modal">
-            <h1>Choose your name!</h1>
-            <form>
-                <div>
-                    <label for="playername">Player name</label>
-                    <input type="text" id="playername" name="playername">
-                </div>
-                <div>
-                    <button type="button" class="btn btn-alt">cancel</button>
-                    <button type="submit" class="btn">confirm</button>
-                </div>
-            </form>
-        </aside>
+        
         <ol>
             <li>
                 <article>
