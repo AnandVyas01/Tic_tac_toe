@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="overlay.css">
 <link rel="stylesheet" href="configuration.css">
+<link rel="stylesheet" href="game.css">
     <title>tic-tac-toe</title>
 </head>
 <body>
@@ -54,22 +55,24 @@
         <button class="btn">Start new Game</button>
     </section>
     <section class="actual-game">
-        <article>
+        <article id="game-over">
             <h3>You won <span id="winner-name">Player name</span>! </h3>
             <p>press start new game to continue playing </p>
         </article>
-        <p>its your turn <span id="active-player-name">player name</span></p>
-        <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ol>
+        <div>
+            <p>its your turn <span id="active-player-name">player name</span></p>
+            <ol>
+                <li></li>
+                <li class="disabled">x</li>
+                <li></li>
+                <li></li>
+                <li class="disabled">o</li>
+                <li></li>
+                <li class="disabled">x</li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div>
     </section>
 </body>
 </html>
