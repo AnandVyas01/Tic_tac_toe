@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic-tac-toe</title>
+</head>
+<body>
+    <header>
+        <h1>TIC_TAC_TOE</h1>
+        <p>play tic-tac-toe game made with HTML, CSS & JS</p>
+    </header>
+    <section class="configuration-section">
+        <aside>
+            <h1>Choose your name!</h1>
+            <form>
+                <div>
+                    <label for="playername">Player name</label>
+                    <input type="text" id="playername" name="playername">
+                </div>
+            </form>
+        </aside>
+        <ol>
+            <li>
+                <article>
+                    <h2>Player 1</h2>
+                    <h3>Player name</h3>
+                    <p>X</p>
+                    <button>Edit</button>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <h2>Player 2</h2>
+                    <h3>Player name</h3>
+                    <p>O</p>
+                    <button>Edit</button>
+                </article>
+            </li>
+        </ol>
+        <button>Start new Game</button>
+    </section>
+    <section class="actual-game">
+        <article>
+            <h3>You won <span id="winner-name">Player name</span>! </h3>
+            <p>press start new game to continue playing </p>
+        </article>
+        <p>its your turn <span id="active-player-name">player name</span></p>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </section>
+</body>
+</html>
