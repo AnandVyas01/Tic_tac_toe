@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: rgb(41, 44, 47);
+    background-color: aliceblue;
+}
+header{
+    color: aliceblue;
+    background-color: rgb(212, 0, 255);
+    text-align: center;
+    padding: 2rem 5%;
+}
+.btn{
+    font: inherit;
+    color: aliceblue;
+    background-color: rgb(212, 0, 255);
+    border: 1px solid rgb(212, 0, 255);
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+}
+.btn-alt{
+    background-color: transparent;
+    border: transparent;
+    color: rgb(212, 0, 255);
+}
+.btn:hover{
+    background-color: rgb(173, 1, 208);
+    cursor: pointer;
+}
+.btn-alt:hover{
+    background-color: rgb(237, 179, 249);
+    /* border: 1px solid rgb(212, 0, 255); */
+}
