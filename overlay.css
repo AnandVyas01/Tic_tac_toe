@@ -1,0 +1,17 @@
+.modal{
+    position: fixed;
+    left: 5%;
+    top: 20%;
+    background-color: aliceblue;
+    padding: 1rem;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    /* display: none; */
+}
+@media(min-width:48rem){
+    .modal{
+        left: 20%/*calc(50%-20rem)*/;
+        width: 40rem;
+    }
+}
