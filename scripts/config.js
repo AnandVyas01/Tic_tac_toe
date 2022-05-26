@@ -6,6 +6,8 @@ function openPlayerConfig(){
 function closeDisplayConfig(){
     toDisplayConfig.style.display= 'none' ;
     toDisplaybackdrop.style.display= 'none' ;
+    formE.target.firstElementChild.classList.remove('error');
+    errorMessage.textContent='';
 }
 
 function savePayerConfig(e){
@@ -13,6 +15,7 @@ function savePayerConfig(e){
     const formData= new FormData(e.target);
     const playerattr= formData.get('playername').trim();
     if(playerattr === ''){
+        e.target.firstElementChild.classList.add('error');
         errorMessage.textContent='please enter a valid name!';
         return;
     }

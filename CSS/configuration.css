@@ -35,3 +35,11 @@
     font-weight: bold;
     color: rgb(171, 0, 205);
 }
+.error input{
+    color: rgb(211, 0, 0);
+    background-color: rgb(255, 166, 166);
+    border-color: red;
+}
+.error label{
+    color: rgb(211, 0, 0) ;
+}
