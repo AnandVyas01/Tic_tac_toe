@@ -25,7 +25,7 @@ const cancelConfigE = document.getElementById('cancel');
 const openActualGameE = document.getElementById('actual-game');
 const editP1btnEle = document.getElementById('edit-p1');
 const editP2btnEle = document.getElementById('edit-p2');
-
+const gameOverE=document.getElementById('game-over')
 editP1btnEle.addEventListener('click', openPlayerConfig);
 editP2btnEle.addEventListener('click', openPlayerConfig);
 

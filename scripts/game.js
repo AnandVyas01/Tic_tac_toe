@@ -28,7 +28,10 @@ function selectGameField(e){
     }
     activePlayerName.textContent=players[activeplayer].name;
     const check = checkWinner();
-    console.log(check);
+    // console.log(check);
+    if(check!==0){
+        endgame(check);
+    }
     currentRound++;
 }
 function checkWinner(){
@@ -58,4 +61,14 @@ function checkWinner(){
             return gameData[0][2];
         }     
         return 0;               
+}
+function endgame(check){
+    gameOverE.style.display='block';
+    if(check>0){
+        const winnerName= players[check-1].name;
+        gameOverE.firstElementChild.firstElementChild.textContent=winnerName;
+    }else{
+        gameOverE.firstElementChild.textContent='it\'s a draw';
+    }
+
 }
