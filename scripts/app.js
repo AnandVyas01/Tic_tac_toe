@@ -1,4 +1,5 @@
 let editedPlayer=0;
+let activeplayer=0;
 const players= [
     {
         name:'',
@@ -13,7 +14,7 @@ const toDisplayConfig = document.getElementById('config');
 const toDisplaybackdrop = document.getElementById('backdrop');
 const errorMessage = document.getElementById('error-message')
 const formE = document.querySelector('form');
-
+const activePlayerName=document.getElementById('active-player-name');
 const cancelConfigE = document.getElementById('cancel');
 const openActualGameE = document.getElementById('actual-game');
 const editP1btnEle = document.getElementById('edit-p1');
@@ -27,3 +28,7 @@ cancelConfigE.addEventListener('click', closeDisplayConfig);
 formE.addEventListener('submit', savePayerConfig);
 
 // openActualGameE.addEventListener('click', openGame);
+const gamefieldelements=document.querySelectorAll('#game-field li');
+for(const gamefieldelement of gamefieldelements){
+    gamefieldelement.addEventListener('click', selectGameField);
+}
