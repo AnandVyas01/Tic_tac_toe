@@ -22,4 +22,6 @@ function savePayerConfig(e){
     }
     const updatedPlayerDataElement = document.getElementById('player-'+editedPlayer+'-data');
     updatedPlayerDataElement.children[1].textContent=playerattr;
+
+    players[editedPlayer - 1].name = playerattr;
 }
