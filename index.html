@@ -56,9 +56,9 @@
                 </article>
             </li>
         </ol>
-        <button class="btn">Start new Game</button>
+        <button class="btn" onclick="openGame()">Start new Game</button>
     </section>
-    <section class="actual-game">
+    <section class="actual-game" id="actual-game">
         <article id="game-over">
             <h3>You won <span id="winner-name">Player name</span>! </h3>
             <p>press start new game to continue playing </p>
@@ -67,12 +67,12 @@
             <p>its your turn <span id="active-player-name">player name</span></p>
             <ol>
                 <li></li>
-                <li class="disabled">x</li>
                 <li></li>
                 <li></li>
-                <li class="disabled">o</li>
                 <li></li>
-                <li class="disabled">x</li>
+                <li></li>
+                <li></li>
+                <li></li>
                 <li></li>
                 <li></li>
             </ol>

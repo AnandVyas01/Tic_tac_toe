@@ -9,6 +9,9 @@
     text-align: center;
     display: none;
 }
+#actual-game{
+    display: none;
+}
 .actual-game div{
     text-align: center;
 }

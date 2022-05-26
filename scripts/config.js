@@ -9,6 +9,7 @@ function closeDisplayConfig(){
     toDisplaybackdrop.style.display= 'none' ;
     formE.target.firstElementChild.classList.remove('error');
     errorMessage.textContent='';
+    formE.firstElementChild.lastElementChild.value='';
 }
 
 function savePayerConfig(e){
@@ -24,4 +25,6 @@ function savePayerConfig(e){
     updatedPlayerDataElement.children[1].textContent=playerattr;
 
     players[editedPlayer - 1].name = playerattr;
+
+    closeDisplayConfig();
 }
