@@ -27,5 +27,35 @@ function selectGameField(e){
         activeplayer=0;
     }
     activePlayerName.textContent=players[activeplayer].name;
-    
+    const check = checkWinner();
+    console.log(check);
+    currentRound++;
+}
+function checkWinner(){
+    for(let i=0;i<3;i++){
+        if(
+          gameData[i][0]>0 &&
+          gameData[i][0]===gameData[i][1]&&
+           gameData[i][1]=== gameData[i][2]
+        ){
+           return gameData[i][0];
+        }
+       }
+       for(let i=0;i<3;i++){
+                            
+        if(
+          gameData[0][i]>0 &&
+          gameData[0][i]=== gameData[1][i]&&
+          gameData[0][i]=== gameData[2][i]
+          ){
+           return gameData[0][i];
+       }
+        }
+        if(gameData[0][0]>0 &&gameData[0][0]===gameData[1][1]&&gameData[1][1]===gameData[2][2]){
+            return gameData[0][0];
+        }
+        if(gameData[0][2]>0 && gameData[0][2]===gameData[1][1]&&gameData[1][1]===gameData[2][0]){
+            return gameData[0][2];
+        }     
+        return 0;               
 }
