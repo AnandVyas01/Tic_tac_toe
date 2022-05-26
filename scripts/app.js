@@ -1,3 +1,4 @@
+let editedPlayer=0;
 const toDisplayConfig = document.getElementById('config');
 const toDisplaybackdrop = document.getElementById('backdrop');
 const errorMessage = document.getElementById('error-message')

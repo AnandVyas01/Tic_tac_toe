@@ -1,6 +1,7 @@
-function openPlayerConfig(){
+function openPlayerConfig(e){
     toDisplayConfig.style.display= 'block' ;
     toDisplaybackdrop.style.display= 'block' ;
+    editedPlayer= +e.target.dataset.playerid; //+ is used to convert string to int
 }
 
 function closeDisplayConfig(){
@@ -19,4 +20,6 @@ function savePayerConfig(e){
         errorMessage.textContent='please enter a valid name!';
         return;
     }
+    const updatedPlayerDataElement = document.getElementById('player-'+editedPlayer+'-data');
+    updatedPlayerDataElement.children[1].textContent=playerattr;
 }
