@@ -7,7 +7,7 @@ function openPlayerConfig(e){
 function closeDisplayConfig(){
     toDisplayConfig.style.display= 'none' ;
     toDisplaybackdrop.style.display= 'none' ;
-    formE.target.firstElementChild.classList.remove('error');
+    formE.firstElementChild.classList.remove('error');
     errorMessage.textContent='';
     formE.firstElementChild.lastElementChild.value='';
 }
