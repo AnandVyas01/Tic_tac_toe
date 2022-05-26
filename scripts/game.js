@@ -20,9 +20,10 @@ function openGame(){
         alert('please enter name before starting the game!!');
         return;
     }
-    resetGameStatus();
+    
     activePlayerName.textContent=players[activeplayer].name;
     openActualGameE.style.display='block';
+    // resetGameStatus();
 }
 function selectGameField(e){
     const selectedColumn=e.target.dataset.col-1;
