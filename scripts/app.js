@@ -1,5 +1,10 @@
 let editedPlayer=0;
 let activeplayer=0;
+const gameData=[
+    [0,0,0],
+    [0,0,0],
+    [0,0,0]
+]
 const players= [
     {
         name:'',
